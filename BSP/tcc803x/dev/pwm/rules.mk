@@ -1,0 +1,7 @@
+DEV_PWM_LOCAL_DIR := $(GET_LOCAL_DIR)
+
+INCLUDE += -I$(DEV_PWM_LOCAL_DIR)/include
+
+SRC += \
+	$(DEV_PWM_LOCAL_DIR)/pwm.c
+

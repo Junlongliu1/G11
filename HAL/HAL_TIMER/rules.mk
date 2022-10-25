@@ -1,0 +1,5 @@
+INCLUDE += -I$(TOPDIR)/HAL/HAL_TIMER
+
+SRC 	+= \
+	$(TOPDIR)/HAL/HAL_TIMER/HAL_Timer.c
+

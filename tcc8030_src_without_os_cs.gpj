@@ -1,0 +1,143 @@
+#!gbuild
+[Program]
+	-I.\APP
+	-I.\APP\Cfg
+	-I.\SERVICE\console
+	-I.\SERVICE
+	-I.\HAL
+	-I.\HAL\HAL_ILL_PWM_OUT
+	-I.\HAL\HAL_ILL_INPUT_CAPTURE
+	-I.\HAL\HAL_POWER_MANAGER
+	-I.\HAL\HAL_SPEED_INPUT_CAPTURE
+	-I.\HAL\HAL_SPEED_PWM_OUT
+	-I.\HAL\HAL_TIMER
+	-I.\HAL\HAL_ADC_KEY
+	-I.\HAL\HAL_VEHICLE_SIGNAL
+	-I.\HAL\HAL_GPIO_KEY
+	-I.\HAL\HAL_NVM
+	-I.\HAL\HAL_IPC
+	-I.\BSP\tcc803x\dev\adc\include
+	-I.\BSP\tcc803x\dev\eeprom\include
+	-I.\BSP\tcc803x\dev\ictc\include
+	-I.\BSP\tcc803x\dev\ipc
+	-I.\BSP\tcc803x\dev\pm\include
+	-I.\BSP\tcc803x\dev\pwm\include
+	-I.\BSP\tcc803x\dev\rotary\include
+	-I.\BSP\tcc803x\dev\timer\include
+	-I.\BSP\tcc803x\dev\watchdog\include
+	-I.\BSP\tcc803x
+	-I.\BSP\tcc803x\ARM
+	-I.\BSP\tcc803x\dev\ipc\include
+	-I.\OS\none
+	-I.\OS\none\GCC
+	-I.\OS\none\GHC
+	-I.\OSAL\osal_none
+	-I.\OSAL
+	-I.\SERVICE\FWUG
+	-I.\SERVICE\NVMManager
+	-I.\SERVICE\IPC
+	-I.\APP\VehicleSignalDemoApp
+	-I.\APP\ConsoleDemoApp
+	-I.\APP\SystemMonitoringApp
+	-I.\APP\KeyApp
+	-I.\APP\PowerManagerApp
+	-I.\APP\NVMManagerApp
+	-I.\APP\SdmSampleApp
+	-object_dir=objs\tcc8030_src
+	{optgroup=GhsCommonOptions} -o output\tcc8030
+	-preprocess_assembly_files
+	-D__func__=__FUNCTION__
+	-DOSAL_INCLUDE
+	-DDMA_NC_SIZE=0x2000
+	-object_dir=output\objs\tcc8030_src
+	-DTTBR_BASE_ADDR=0xC0024000
+	-cpu=cortexr5f
+	-DSNOR_STANDALONE
+	-DTCC803x
+	-DOS_NONE
+	-DTCC803x_CS
+	:postexecShellSafe=mkrom_cs.bat
+	-O0
+	-I.\BSP\tcc803x\dev\reboot\include
+	-I.\BSP\tcc803x\dev\lvds
+	-I.\SERVICE\HSMManager
+BSP\tcc803x\fwug.c
+BSP\tcc803x\dev\lvds\lvds_dualport_cluster.c
+BSP\tcc803x\dev\lvds\lvds_initializer.c
+BSP\tcc803x\dev\lvds\lvds_phy.c
+BSP\tcc803x\dev\lvds\lvds_wrap.c
+HAL\HAL_IPC\HAL_IPC_CM4.c
+HAL\HAL_IPC\HAL_IPC_CA53.c
+HAL\HAL_IPC\HAL_IPC_CA7.c
+BSP\tcc803x\ARM\mpu.c
+APP\SystemMonitoringApp\SystemMonitoring_App.c
+SERVICE\IPC\tcc_ipc_protocol.c
+
+APP\NVMManagerApp\NVMManager_App.c
+APP\SdmSampleApp\SdmSample.c
+HAL\HAL_SPEED_PWM_OUT\HAL_SpeedPwmOut.c
+HAL\HAL_SPEED_INPUT_CAPTURE\HAL_SpeedInputCapture.c
+HAL\HAL_CODEC\HAL_CODEC.c
+HAL\HAL_ILL_PWM_OUT\HAL_IlluminatePwmOut.c
+HAL\HAL_ILL_INPUT_CAPTURE\HAL_IlluminateInputCapture.c
+HAL\HAL_ADC_KEY\HAL_ADCKey.c
+HAL\HAL_GPIO_KEY\HAL_Rotary.c
+HAL\HAL_GPIO_KEY\HAL_GPIOKey.c
+HAL\HAL_POWER_MANAGER\HAL_PowerManager.c
+HAL\HAL_NVM\HAL_FRAM.c
+HAL\HAL_VEHICLE_SIGNAL\HAL_VehicleSignal.c
+HAL\HAL_NVM\HAL_NVM.c
+SERVICE\NVMManager\NVMManager.c
+SERVICE\console\Console.c
+HAL\HAL_CONSOLE\HAL_Console.c
+SERVICE\HSMManager\HSMManagerA53.c
+SERVICE\HSMManager\HSMManagerM4.c
+SERVICE\HSMManager\CryptoData.c
+SERVICE\suspend.c
+HAL\HAL_TIMER\HAL_Timer.c
+HAL\HAL_devices.c
+HAL\HAL_API.c
+APP\main.c
+APP\ConsoleDemoApp\ConsoleDemoApp.c
+APP\KeyApp\Key_App.c
+SERVICE\IPC\IPC_Parser.c
+APP\VehicleSignalDemoApp\VehicleSignalDemoApp.c
+APP\PowerManagerApp\PowerManager_App.c
+BSP\tcc803x\dev\eeprom\eeprom.c
+BSP\tcc803x\dev\adc\tcc_adc.c
+BSP\tcc803x\dev\ictc\ictc.c
+BSP\tcc803x\dev\reboot\ca7sp_reset.c
+BSP\tcc803x\dev\reboot\ca53mp_reset.c
+BSP\tcc803x\dev\ipc\tcc_ipc_os.c
+BSP\tcc803x\dev\pm\tcc_pmgpio.c
+BSP\tcc803x\dev\ipc\tcc_ipc_buffer.c
+BSP\tcc803x\dev\ipc\tcc_ipc_cmd.c
+BSP\tcc803x\dev\ipc\tcc_ipc_ctl.c
+BSP\tcc803x\dev\ipc\tcc_ipc_mbox.c
+BSP\tcc803x\dev\pwm\pwm.c
+BSP\tcc803x\dev\timer\tcc_timer.c
+BSP\tcc803x\dev\watchdog\tcc_wdt.c
+BSP\tcc803x\bsp.c
+BSP\tcc803x\bsp_os.c
+BSP\tcc803x\ARM\GHC\vector.asm
+BSP\tcc803x\tcc_ckc.c
+BSP\tcc803x\div64.c
+BSP\tcc803x\clock.c
+BSP\tcc803x\udma.c
+BSP\tcc803x\device_share_config.c
+BSP\tcc803x\uart.c
+BSP\tcc803x\spi.c
+BSP\tcc803x\i2c.c
+BSP\tcc803x\gpio.c
+BSP\tcc803x\ARM\bsp_int.c
+BSP\tcc803x\ARM\GHC\arm_a.asm
+BSP\tcc803x\ARM\GHC\cache.asm
+BSP\tcc803x\ARM\GHC\startup.asm
+BSP\tcc803x\ARM\GHC\vfp_init.asm
+BSP\tcc803x\ARM\bsp_os_timer.c
+BSP\tcc803x\debug.c
+
+OS\none\GHC\none_os.asm
+OSAL\osal.asm
+OSAL\osal_none\osal_none_impl.c
+tgt\standalone_romcopy_tcc8030_snor_cs.ld

@@ -1,0 +1,5 @@
+INCLUDE += -I$(TOPDIR)/HAL/HAL_EEP
+
+SRC 	+= \
+	$(TOPDIR)/HAL/HAL_EEP/HAL_Eep.c
+

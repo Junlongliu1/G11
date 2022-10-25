@@ -1,0 +1,7 @@
+DEV_TIMER_LOCAL_DIR := $(GET_LOCAL_DIR)
+
+INCLUDE += -I$(DEV_TIMER_LOCAL_DIR)/include
+
+SRC += \
+	$(DEV_TIMER_LOCAL_DIR)/tcc_timer.c
+

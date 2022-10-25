@@ -1,0 +1,7 @@
+OSAL_FREERTOS_DIR := $(GET_LOCAL_DIR)
+
+INCLUDE += -I$(OSAL_FREERTOS_DIR)
+
+SRC += \
+    $(OSAL_FREERTOS_DIR)/osal_freertos_impl.c
+

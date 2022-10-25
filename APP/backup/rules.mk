@@ -1,0 +1,6 @@
+APP_BACKUP_PATH := $(TOPDIR)/APP/backup
+
+INCLUDE += -I$(APP_BACKUP_PATH)
+
+SRC += \
+	$(APP_BACKUP_PATH)/backup_ram.c

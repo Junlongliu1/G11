@@ -1,0 +1,5 @@
+INCLUDE += -I$(TOPDIR)/HAL/HAL_SNR
+
+SRC 	+= \
+	$(TOPDIR)/HAL/HAL_SNR/HAL_Snr.c
+

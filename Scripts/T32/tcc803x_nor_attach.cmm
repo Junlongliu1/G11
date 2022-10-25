@@ -1,0 +1,34 @@
+//===========================================================================
+//
+//                       Load Bootlaoder for TCC802x (A7)
+//
+//                        EDIT HISTORY FOR MODULE
+//
+//---------------------------------------------------------------------------
+// version     who      history
+//---------------------------------------------------------------------------
+// 160727    Sangwon    Create file
+//===========================================================================
+
+
+sys.cpu CortexR5
+sys.CONFIG.DEBUGACCESSPORT 1
+sys.CONFIG.AHBACCESSPORT 0
+sys.config corebase	0x80410000
+sys.m.a
+
+if run()
+	Break
+
+//gcc
+cd Y:\work\micom_src\build\tcc803x
+d.load.elf output/boot /RELPATH /PATH ./ /nocode
+
+//ghc
+//cd Y:\work\tcc8020_micom
+//cd Y:\work\temp\hud
+//d.load.elf tcc8020 /RELPATH /PATH ./ /nocode
+
+data.list
+
+enddo

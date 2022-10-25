@@ -1,0 +1,10 @@
+DEV_REBOOT_LOCAL_DIR := $(GET_LOCAL_DIR)
+
+INCLUDE += -I$(DEV_REBOOT_LOCAL_DIR)/include
+
+INCLUDE += -I$(DEV_REBOOT_LOCAL_DIR)../ipc/include
+
+SRC += \
+	$(DEV_REBOOT_LOCAL_DIR)/ca53mp_reset.c \
+	$(DEV_REBOOT_LOCAL_DIR)/ca7sp_reset.c
+

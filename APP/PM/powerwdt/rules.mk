@@ -1,0 +1,6 @@
+APP_POWERWDT_PATH := $(TOPDIR)/APP/PM/powerwdt
+
+INCLUDE += -I$(APP_POWERWDT_PATH)
+
+SRC += \
+	$(APP_POWERWDT_PATH)/pmwdt.c

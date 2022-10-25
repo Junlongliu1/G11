@@ -1,0 +1,7 @@
+DEV_PMGPIO_LOCAL_DIR := $(GET_LOCAL_DIR)
+
+INCLUDE += -I$(DEV_PMGPIO_LOCAL_DIR)/include
+
+SRC += \
+	$(DEV_PMGPIO_LOCAL_DIR)/tcc_pmgpio.c
+

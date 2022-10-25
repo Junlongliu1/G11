@@ -1,0 +1,91 @@
+#ifndef __RPC_MODULE_H__
+#define __RPC_MODULE_H__
+
+#define ARPC_ID_R5_MIN     	0x10
+#define ARPC_ID_R5_POWERMNG     0x11
+#define ARPC_ID_R5_AGENT     	0x12
+#define ARPC_ID_SENSOR     	0x13
+#define ARPC_ID_LET     	0x14
+#define ARPC_ID_LINETOOLAPP	0x15
+#define ARPC_ID_R5_POWERDRV     0x16
+#define ARPC_ID_R5_SOFTWDT     	0x17
+#define ARPC_ID_R5_HARDWDT     	0x18
+#define ARPC_ID_LED     	0x19
+#define ARPC_ID_R5_KEY     	0x1A
+#define ARPC_ID_R5_LOGAPP     	0x1B
+#define ARPC_ID_LET_SUBA     	0x1C
+#define ARPC_ID_LET_SUBB     	0x1D
+#define ARPC_ID_KLINEDRV     	0x1E
+#define ARPC_ID_EEPROM		0x1F
+#define ARPC_ID_R5_RPC	     	0x20
+#define ARPC_ID_R5_BACKUPRAM   	0x21
+#define ARPC_ID_OS		0x22
+#define ARPC_ID_R5_MAX     	0x40
+/* RPC A7 ID*/
+#define ARPC_ID_A7_MIN     	0x40
+#define ARPC_ID_A7_RPC     	0x41
+#define ARPC_ID_CAMERAAPP       0x42
+#define ARPC_ID_A7_POWER     	0x43
+#define ARPC_ID_A7_AGENT     	0x44
+#define ARPC_ID_DGLAPP     	0x45
+#define ARPC_ID_A7_NVM    	0x46
+#define ARPC_ID_REARCAMERA    	0x47
+#define ARPC_ID_LANEWATCH    	0x48
+#define ARPC_ID_A7_LOGAPP    	0x49
+#define ARPC_ID_A7_SM     	0x4A
+#define ARPC_ID_A7_MAX     	0x70
+/* RPC A53 ID*/ 
+#define ARPC_ID_A53_MIN     	0x70
+#define ARPC_ID_AUDIOSOURCE     0x71
+#define ARPC_ID_WEBLINK_STM     0x72
+#define ARPC_ID_BT              0x73
+#define ARPC_ID_MEDIA_DETECT    0x74
+#define ARPC_ID_LINKMGR         0x75
+#define ARPC_ID_HMI             0x76
+#define ARPC_ID_TUNER           0x77
+#define ARPC_ID_AAP_STM1        0x78
+#define ARPC_ID_AAP_STM2        0x79
+#define ARPC_ID_IPOD_STM        0x7A
+#define ARPC_ID_CARPLAY_STM     0x7B
+#define ARPC_ID_IPOD_APL        0x7C
+#define ARPC_ID_SOUNDAPP        0x7D
+#define ARPC_ID_USBSTM          0x7E
+#define ARPC_ID_USBAPP          0x7F
+#define ARPC_ID_USBFILE         0x80
+#define ARPC_ID_USBMW           0x81
+#define ARPC_ID_TAGSEARCH       0x82
+#define ARPC_ID_GNSS            0x83
+#define ARPC_ID_PRODUCTMGR      0x84
+#define ARPC_ID_A53_POWER     	0x85
+#define ARPC_ID_A53_AGENT     	0x86
+#define ARPC_ID_UPDATASTM     	0x87
+#define ARPC_ID_BTSTM_TO_APP    0x88
+#define ARPC_ID_BTAPP_TO_STM    0x89
+#define ARPC_ID_OPENING    	0x8A
+#define ARPC_ID_A53_KEY     	0x8B
+#define ARPC_ID_DIAGAPP     	0x8C
+#define ARPC_ID_CLOCK    	0x8D
+#define ARPC_ID_A53_NVM    	0x8E
+#define ARPC_ID_MFI    		0x8F
+#define ARPC_ID_VIDEOSOURCE     0x90
+#define ARPC_ID_ATATAPP    	0x91
+#define ARPC_ID_A53_LOGAPP    	0x92
+#define ARPC_ID_TP    		0x93
+#define ARPC_ID_IMAGEMGR    	0x94
+#define ARPC_ID_WEBLINK_MW    	0x95
+#define ARPC_ID_IAP2		0X96
+#define ARPC_ID_WIFI_MW		0x97
+#define ARPC_ID_WIFI_LAUNCH	0x98
+#define ARPC_ID_A53_SM     	0x99
+#define ARPC_ID_LCD     	0x9A
+#define ARPC_ID_CARPLAY_DIGIPOD 0x9B
+#define ARPC_ID_A53_RPC 	0x9C
+#define ARPC_ID_IAP_BT      	0x9D
+#define ARPC_ID_IAP_WIFI        0x9E
+#define ARPC_ID_USB_TEST        0x9F
+#define ARPC_ID_USB_KERNELPIPE  0xA0
+#define ARPC_ID_ECNRTEST	    0xAF
+#define ARPC_ID_A53_MAX     	0xB0
+
+
+#endif

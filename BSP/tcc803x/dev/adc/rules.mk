@@ -1,0 +1,7 @@
+DEV_ADC_LOCAL_DIR := $(GET_LOCAL_DIR)
+
+INCLUDE += -I$(DEV_ADC_LOCAL_DIR)/include
+
+SRC += \
+	$(DEV_ADC_LOCAL_DIR)/tcc_adc.c
+

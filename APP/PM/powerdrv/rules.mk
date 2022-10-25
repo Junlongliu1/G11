@@ -1,0 +1,6 @@
+APP_POWERDRV_PATH := $(TOPDIR)/APP/PM/powerdrv
+
+INCLUDE += -I$(APP_POWERDRV_PATH)
+
+SRC += \
+	$(APP_POWERDRV_PATH)/pmdrv.c

@@ -1,0 +1,6 @@
+APP_POWER_PATH := $(TOPDIR)/APP/PM/power
+
+INCLUDE += -I$(APP_POWER_PATH)
+
+SRC += \
+	$(APP_POWER_PATH)/pm.c

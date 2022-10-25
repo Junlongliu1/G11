@@ -1,0 +1,6 @@
+APP_PMIO_PATH := $(TOPDIR)/APP/PM/pmio
+
+INCLUDE += -I$(APP_PMIO_PATH)
+
+SRC += \
+	$(APP_PMIO_PATH)/pm_gpio.c
